@@ -137,6 +137,7 @@ img{
 }
 .header-list-svg{
     margin-right: 10px;
+    fill: var(--second-color);
 
 }
 .hero{
@@ -194,11 +195,12 @@ img{
     margin-right: 30px;
 }
 .about-us-icon{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    padding: 25px 100px;
     margin-bottom: 30px;
 }
 .about-us-title{
@@ -248,6 +250,8 @@ margin-right: 30px;
 .our-team-info{
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
     text-align: center;
 }
 .our-team-name{
@@ -264,8 +268,6 @@ margin-right: 30px;
 }
 .our-team-social-icon-list{
     display: flex;
-    padding-right: 32px;
-    padding-left: 32px;
     justify-content: space-between;
     margin-top: 16px;
 }
@@ -311,6 +313,7 @@ margin-right: 30px;
     }
 .footer-conteiner{
     display: flex;
+    align-items: baseline;
     }
 .footer-logo {
     font-family: 'Raleway';
@@ -342,11 +345,11 @@ margin-right: 30px;
     color: var(--address-link-color);
 }
 
-.footer-title{
+.footer-text{
+    font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-top: 12px;
     margin-bottom: 20px;
 
 }
@@ -415,8 +418,11 @@ margin-right: 30px;
     margin-top: 30px;
 
 }
-.portfolio-list-item:hover,
-.portfolio-list-item:focus{
+.portfolio-list-link{
+    display: block;
+}
+.portfolio-list-link:hover,
+.portfolio-list-link:focus{
     overflow: hidden;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
