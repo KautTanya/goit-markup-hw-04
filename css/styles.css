@@ -112,7 +112,8 @@ img{
 }
 
 .header-list-link{
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -120,26 +121,26 @@ img{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var( --second-color);
+    fill: var(--second-color);
+
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus{
     color: var(--accent-color);
 }
+.header-list-svg{
+    margin-right: 10px;
+    
+}
+
 .header-list-link:hover,
 .header-list-link:focus{
     color: var(--accent-color);
     fill: var(--accent-color);
     
 }
-.header-list-info{
-    display: flex;
-    align-items: center;
-}
-.header-list-svg{
-    margin-right: 10px;
-    fill: var(--second-color);
 
-}
+
 .hero{
     padding-top: 200px;
     padding-bottom: 200px;
